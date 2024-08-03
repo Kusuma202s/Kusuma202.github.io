@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById('signup-form');
     const toast = document.getElementById('toast');
-    const apiUrl = ' https://jsonplaceholder.typicode.com/'
-    'https://domevents.dev/'; // Replace with your actual API URL
+    const apiUrl = ' https://jsonplaceholder.typicode.com/'; 
 
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
@@ -82,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 3000);
     }
 
-    // Fetch users on initial load
+    
     fetchUsers();
 });
 
