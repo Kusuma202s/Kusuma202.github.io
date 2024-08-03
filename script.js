@@ -84,4 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
     
     fetchUsers();
 });
+function copyToClipboard() {
+    const info = document.getElementById('infoToCopy').innerText;
+    navigator.clipboard.writeText(info).then(() => {
+        alert('Information copied to clipboard!');
+    }).catch(err => {
+        console.error('Error copying to clipboard: ', err);
+    });
+}
 

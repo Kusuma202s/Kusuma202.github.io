@@ -30,6 +30,36 @@
         <h2>Users</h2>
         <div id="user-list" class="user-list"></div>
     </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Tool Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+        <button onclick="copyToClipboard()">Copy Information</button>
+        <pre id="infoToCopy">
+            ### Browser Tool Information
+            - **Purpose:** The browser tool allows you to look up real-time information, current events, and unfamiliar terms. It can open URLs provided by the user.
+            - **Steps to Use:**
+              1. **Search Query:** Issue a query to a search engine to display results.
+              2. **Click Results:** Select at least 3 and at most 10 pages to retrieve their contents.
+              3. **Write Response:** Summarize the results and provide citations.
+              4. **Open URL:** Directly open a provided URL if specified by the user.
+            - **Citation Format:**
+              - Quotes: `【{message idx}†{link text}】`
+              - Long Citations: `[link text](message idx)`
+
+            **Location:** The browser tool is part of the assistant's toolkit and can be invoked when needed for tasks such as retrieving real-time information or exploring unfamiliar terms.
+        </pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
     <script src="script.js"></script>
 </body>
 </html>
